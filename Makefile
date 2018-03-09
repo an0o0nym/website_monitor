@@ -48,6 +48,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .tox/
 	rm -f .coverage
 	rm -fr htmlcov/
+	> website_monitor/logs/logfile
 
 lint: ## check style with flake8
 	flake8 website_monitor tests
