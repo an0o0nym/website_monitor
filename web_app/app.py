@@ -17,5 +17,9 @@ def index():
     return render_template('index.html', records=records)
 
 
-if __name__ == '__main__':
+def main():
     app.run()
+
+
+if __name__ == '__main__':
+    main()

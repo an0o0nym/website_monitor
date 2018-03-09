@@ -277,8 +277,11 @@ def parse_cl_args(argv):
         elif opt in ("-i", "--interval"):
             return val
 
-
-if __name__ == '__main__':
+def main():
     interval = parse_cl_args(sys.argv[1:])
+    db_utils.create_table()
     config = Config(check_period=interval)
     Monitor(config).start_watch()
+
+if __name__ == '__main__':
+    main()

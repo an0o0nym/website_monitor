@@ -45,4 +45,10 @@ setup(
     url='https://github.com/an0o0nym/website_monitor',
     version='0.1.0',
     zip_safe=False,
+    entry_points = {
+        'console_scripts': [
+            'website_monitor=website_monitor.website_monitor:main',
+            'website_monitor_web_app=web_app.app:main'
+        ],
+    }
 )

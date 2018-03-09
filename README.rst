@@ -20,17 +20,23 @@ A perfect tool for web site administrators!
 
 Usage
 ------
-* Use :code:`python -m website_monitor.website_monitor` from top level directory
-  to run the application
+
+* Use :code:`website_monitor` to run the application
 * Use (:code:`-i time_in_seconds` or :code:`--i=time_in_seconds`)
   flags to set custom interval time between website status checks.
-* Use :code:`tail -f logs/logfile` to see live updates of log file
-* Use :code:`export FLASK_APP=web_app/app.py; flask run` from top level directory
-  to run flask web server. Then you can simply view logs in your browser
-  at :code:`localhost:5000`
+* Use :code:`website_monitor_web_app` to run flask web server.
+  Then you can simply view logs in your browser at :code:`localhost:5000`
 
+License
+-------
 
 * Free software: MIT license
+
+
+TODO
+----
+
+* Create a way to simply view logfile via CLI
 
 
 Credits
