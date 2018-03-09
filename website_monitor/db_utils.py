@@ -45,7 +45,7 @@ def create_table():
                 url	TEXT,
                 request_time	REAL,
                 status	INTEGER,
-                response_time	REAL
+                response_time	REAL,
                 requirements	INTEGER,
                 error	TEXT,
                 PRIMARY KEY(id))
@@ -97,6 +97,7 @@ def get_all_records():
     :return: List of tuples representing status check records.
     """
     conn, cur = get_connection()
+    records = []
     try:
         cur.execute('''SELECT * FROM website_checks''')
         records = cur.fetchall()
