@@ -18,6 +18,10 @@ This tool is intended as a monitoring program for detecting problems on websites
 A perfect tool for web site administrators!
 
 
+Installation
+------------
+* Use :code:`pip install website_monitor` to install
+
 Usage
 ------
 
