@@ -1,0 +1,14 @@
+{
+    "google": {
+        "url":"https://www.google.com",
+        "content": "search"
+    },
+    "bioinfobank": {
+        "url": "https://bioinfo.pl/career",
+        "content": "Python Software Engineer"
+    },
+    "notexiting": {
+        "url": "https://notexsitsasdiongr.pl/career"
+    },
+    "check_period": 3600
+}

@@ -11,11 +11,11 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ ]
+requirements = ['Flask==0.12.2', 'requests==2.18.4']
 
-setup_requirements = ['pytest-runner', ]
+setup_requirements = ['pytest-runner']
 
-test_requirements = ['pytest', ]
+test_requirements = ['pytest']
 
 setup(
     author="Damian P.",
@@ -30,14 +30,15 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    description="Website Monitor is a program used for monitoring web sites and reporting their availability.",
+    description=("Website Monitor is a program used for monitoring web sites "
+                 "and reporting their availability."),
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
     keywords='website_monitor',
     name='website_monitor',
-    packages=find_packages(include=['website_monitor']),
+    packages=find_packages(include=['website_monitor', 'web_app']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,

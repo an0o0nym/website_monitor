@@ -9,10 +9,6 @@ Website Monitor
 .. image:: https://img.shields.io/travis/an0o0nym/website_monitor.svg
         :target: https://travis-ci.org/an0o0nym/website_monitor
 
-.. image:: https://readthedocs.org/projects/website-monitor/badge/?version=latest
-        :target: https://website-monitor.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
 
 
 
@@ -22,14 +18,20 @@ This tool is intended as a monitoring program for detecting problems on websites
 A perfect tool for web site administrators!
 
 
+Usage
+------
+* Use `python -m website_monitor.website_monitor` from top level directory
+  to run the application
+* Use (`-i time_in_seconds` or `--i=time_in_seconds`)
+  flags to set custom interval time between website status checks.
+* Use `tail -f logs/logfile` to see live updates of log file
+* Use `export FLASK_APP=web_app/app.py; flask run` from top level directory
+  to run flask web server. Then you can simply view logs in your browser
+  at `localhost:5000`
+
+
 * Free software: MIT license
-* Documentation: https://website-monitor.readthedocs.io.
 
-
-Features
---------
-
-* TODO
 
 Credits
 -------

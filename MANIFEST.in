@@ -3,9 +3,12 @@ include CONTRIBUTING.rst
 include HISTORY.rst
 include LICENSE
 include README.rst
+include website_monitor/config.json
 
 recursive-include tests *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
+graft web_app/templates
+graft website_monitor/logs
 
 recursive-include Makefile make.bat *.jpg *.png *.gif
