@@ -11,7 +11,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Flask==0.12.2', 'requests==2.18.4']
+requirements = ['Flask==0.12.2', 'requests==2.20.0']
 
 setup_requirements = ['pytest-runner']
 

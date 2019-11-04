@@ -5,7 +5,7 @@ flake8==3.5.0
 Flask==0.12.2
 tox==2.9.1
 coverage==4.5.1
-requests==2.18.4
+requests==2.20.0
 
 pytest==3.4.1
 pytest-runner==2.11.1
